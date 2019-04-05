@@ -2,9 +2,10 @@
 Use a Raspberry Pi as a data processor &amp; grapher for external esp8266 chips connected to dht-11 temperature sensors and hub75 32x16 led matrix displays
 
 ## Setup
-Run:
-1. apSetup.sh
-2. influxSetup.sh
+1. Clean install raspbian on a raspberry pi
+2. Run:
+   1. apSetup.sh
+   2. influxSetup.sh
 ## Lib Dependencies
 - [General Sensors](https://github.com/adafruit/Adafruit_Sensor)
 - [DHT Sensors](https://github.com/adafruit/DHT-sensor-library)
