@@ -36,3 +36,4 @@ sed -i 's~#net\.ipv4\.ip_forward=1~net\.ipv4\.ip_forward=1~' /etc/sysctl.conf
 sudo iptables -t nat -A  POSTROUTING -o eth0 -j MASQUERADE
 sudo sh -c "iptables-save > /etc/iptables.ipv4.nat"
 sed -i '19s~.*~iptables-restore < /etc/iptables\.ipv4\.nat~' /etc/rc.local
+sudo reboot
